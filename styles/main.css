@@ -1,0 +1,83 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Abel', sans-serif;
+}
+
+.color {
+	text-align: center;
+	font-size: 14em;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+/* Clock */
+
+#clock {
+	position: relative;
+	width: 320px;
+	height: 320px;
+	background: #E74C3C;
+	margin: 0 auto;
+	border: 10px solid #fff;
+
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+
+	-webkit-box-shadow:inset 1px 1px 10px 5px #BABABA;
+	box-shadow: inset 1px 1px 10px 5px rgba(0, 0, 0, 0.07);
+}
+
+#clock:before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  margin: -11px 0 0 -8px;
+  width: 16px;
+  height: 16px;
+  background: #E5E5E5;
+
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.pointers {
+  position: absolute;
+  left: 50%;
+  background: #fff;
+  -webkit-animation: rotate 60s infinite linear;
+  -webkit-transform-origin: left bottom;
+  -moz-animation: rotate 60s infinite linear;
+  -moz-transform-origin: left bottom;
+  -ms-animation: rotate 60s infinite linear;
+  -ms-transform-origin: left bottom;
+  -o-animation: rotate 60s infinite linear;
+  -o-transform-origin: left bottom;
+  animation: rotate 60s infinite linear;
+  transform-origin: left bottom;
+}
+
+.sElem {
+  height: 150px;
+  width: 2px;
+  top: 6px;
+}
+
+.mElem {
+  height: 120px;
+  width: 4px;
+  margin-left: -1px;
+  top: 37px;
+}
+
+.hElem {
+  height: 90px;
+  width: 6px;
+  margin-left: -1px;
+  top: 72px;
+}
