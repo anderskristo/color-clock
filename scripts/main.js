@@ -54,6 +54,7 @@
     setTimeout(colorClock, 1000);
   }
 
-  colorClock();
+  // properly match the milliseconds of the host computer
+  setTimeout(colorClock, 1000 - new Date().getMilliseconds());
 
 })();
