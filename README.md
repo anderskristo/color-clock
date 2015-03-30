@@ -3,4 +3,4 @@ color-clock
 
 Super colorness clock
 
-http://lab.anderskristo.me/color-clock/
+http://anderskristo.me/color-clock/
